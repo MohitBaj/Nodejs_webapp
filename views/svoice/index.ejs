@@ -1,0 +1,10 @@
+<h2>Search Svoice entries</h2>
+<form action="/svoice" method="GET">
+    <label>Name</label>
+    <input type="text" name="name" value="<%= searchOptions.name %>">
+    <button type="submit">Search</button>
+</form>
+<br>
+<% svoice.forEach(sv => { %>
+    <div><%= sv.name %></div>
+<% }) %>
